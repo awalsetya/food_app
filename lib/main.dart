@@ -11,10 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: GeneralPage(
-        onBackButtonPresses: () {},
-        child: Text("Body"),
-      ),
+      home: SignInPage(),
     );
   }
 }
