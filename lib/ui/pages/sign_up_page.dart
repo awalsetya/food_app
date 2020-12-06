@@ -106,24 +106,21 @@ class _SignUpPageState extends State<SignUpPage> {
             margin: EdgeInsets.only(top: 24),
             height: 45,
             padding: EdgeInsets.symmetric(horizontal: defaultMargin),
-            child: isLoading
-                ? SpinKitFadingCircle(
-                    size: 45,
-                    color: mainColor,
-                  )
-                : RaisedButton(
-                    onPressed: () {},
-                    elevation: 0,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    color: mainColor,
-                    child: Text(
-                      "Continue",
-                      style: GoogleFonts.poppins(
-                          color: Colors.white, fontWeight: FontWeight.w500),
-                    ),
-                  ),
+            child: RaisedButton(
+              onPressed: () {
+                Get.to(AddressPage());
+              },
+              elevation: 0,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(8),
+              ),
+              color: mainColor,
+              child: Text(
+                "Continue",
+                style: GoogleFonts.poppins(
+                    color: Colors.black, fontWeight: FontWeight.w500),
+              ),
+            ),
           ),
         ],
       ),
